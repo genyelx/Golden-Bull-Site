@@ -9,10 +9,14 @@
     --color-brown-100: #845104;
     --color-red-100: #d41111;
     --color-black-100: black;
+    --color-black-900: rgb(25, 25, 25);
+    --gradient-top-1: linear-gradient(to top, rgba(0, 0, 0, .9), rgba(0, 0, 0, .5));
+    --gradient-top-2: linear-gradient(to top, var(--color-blue-500), var(--color-blue-500));
     --bg-video: rgba(0, 0, 0, 0.8);
     --text-shadow: 2px, 2px, 2px;
     --o-animation: scale-change 2.5s ease-in-out infinite;
-    ;
+    --o-animation-shadow-light: shadow-light 2.5s ease-in-out infinite;
+    --o-animation-shadow-green: shadow-green 2.5s ease-in-out infinite;
 }
 
 * {
@@ -41,6 +45,14 @@ p {
 
 ul {
     list-style-type: none;
+}
+
+.shadow-light{
+    animation: var(--o-animation-shadow-light);
+}
+
+.shadow-green{
+    animation: var(--o-animation-shadow-green);
 }
 
 .scale-change {
@@ -90,19 +102,22 @@ ul {
 
 .nav-item {
     margin: auto;
-    text-align: center;
+}
+
+.navbar-text{
+    margin-left: 31%;
 }
 
 .nav-item a {
     font-family: var(--font-title);
     font-weight: 200;
     color: aliceblue;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .nav-item a:hover,
 .nav-item a:focus {
-    color: var(--color-blue-500);
+    color: var(--color-black-100);
 }
 
 .first-page {
@@ -116,6 +131,7 @@ ul {
     position: absolute;
     inset: 0;
     background-color: var(--bg-video);
+    background: var(--gradient-top-1);
     z-index: -1;
 }
 
@@ -170,12 +186,11 @@ ul {
     object-fit: cover;
 }
 
-.card img {
+.card img{
     cursor: pointer;
     filter: brightness(0.7);
     transition: 0.7s;
     border-radius: 3%;
-    ;
 }
 
 .card img:hover {
@@ -188,6 +203,7 @@ ul {
     top: 0;
     display: flex;
     gap: 10px;
+    background:var(--gradient-top-2);
 }
 
 .caroulsel-grid {
@@ -248,6 +264,7 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    animation: shadow-light 5s ease-in-out infinite;
 }
 
 .caroulsel-images-game img {
@@ -277,24 +294,52 @@ ul {
     justify-content: center;
     align-items: center;
     color: var(--color-light-900);
-    gap: 50%;
+    gap: 30%;
     margin-top: 5%;
+}
+
+.instagram-images li{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .instagram-images i{
     font-size: 60px;
+    color: var(--color-light-900);
+    background-color:var(--color-black-900);
+    padding: 10px;
+    border-radius: 10px;
 }
 
-.figure-fluid h1{
+.instagram-images i:hover{
+    color: var(--color-red-100);
+    background-color: var(--color-light-900);
+    font-size: 70px;
+}
+
+.instagram-images p{
+    font-size: 30px;
+    font-family: var(--font-subtitle);
+}
+
+.figure-fluid h2{
     font-size: 40px;
     margin-top: 10%;
+    color: var(--color-light-900);
 }
 
 .figure-fluid img{
-    background-color: var(--color-light-900);
     border-radius: 5%;
+    background-color: var(--color-black-900);
     margin-top: 2%;
 }
+
+.figure-fluid img:hover{
+    scale: 1.1;
+    background-color: var(--color-light-900);
+}
+
 
 @media (max-width:900px) {
     .card-text {
