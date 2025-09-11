@@ -9,6 +9,7 @@
     --color-brown-100: #845104;
     --color-red-100: #d41111;
     --color-black-100: black;
+    --color-golden-100: #ffdd5a;
     --color-black-900: rgb(25, 25, 25);
     --gradient-top-1: linear-gradient(to top, rgba(0, 0, 0, .9), rgba(0, 0, 0, .5));
     --gradient-top-2: linear-gradient(to top, var(--color-blue-500), var(--color-blue-500));
@@ -85,7 +86,7 @@ ul {
 .navbar-brand:hover,
 .navbar-brand:focus {
     font-size: 40px;
-    color: var(--color-blue-500)
+    color: var(--color-golden-100)
 }
 
 .navbar-toggler {
@@ -117,7 +118,7 @@ ul {
 
 .nav-item a:hover,
 .nav-item a:focus {
-    color: var(--color-black-100);
+    color: var(--color-red-100);
 }
 
 .first-page {
@@ -172,7 +173,7 @@ ul {
 }
 
 .cards-characters {
-    min-height: 75vh;
+    min-height: 79vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -181,7 +182,7 @@ ul {
 }
 
 .card {
-    width: 60%;
+    width: 70%;
     height: 100%;
     object-fit: cover;
 }
@@ -247,7 +248,7 @@ ul {
 }
 
 .card-text {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 200;
 }
 
@@ -343,6 +344,11 @@ ul {
 
 
 @media (max-width:900px) {
+
+    .card{
+        width: 90%;
+    }
+
     .card-text {
         font-size: 1.13rem;
     }
