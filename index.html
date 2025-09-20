@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="pt-br">
 
+<!-- by geniel -->
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,10 +34,10 @@
 
 <body>
     <div class="primary-container" id="Início">
-        <section class="first-page">
+        <section class="first-page container-fluid">
             <nav class="navbar navbar-expand-lg">
-                <div class="container my-3">
-                    <h1><a class="navbar-brand" href="#Sobre">GoldenBullRun</a></h1>
+                <div class="container my-3 col-lg-12">
+                    <h1><a class="navbar-brand col-lg-4" href="#Sobre">GoldenBullRun</a></h1>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +45,7 @@
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <div class="navbar-text">
+                        <div class="navbar-text col-lg-8">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a class="nav-link" href="#Início">Início</a>
@@ -54,11 +56,11 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#Social">Social</a>
                                 </li>
-                                <li> <button type="button" class="btn btn-danger btn-lg rounded-4 mx-5"
-                                        style="--bs-btn-padding-y: 10px; --bs-btn-padding-x: 30px; --bs-btn-font-size: 10px;">BAIXE
-                                        AGORA</button></li>
                             </ul>
                         </div>
+                        <button type="button" class="btn btn-danger btn-lg rounded-4"
+                            style="--bs-btn-padding-y: 10px; --bs-btn-padding-x: 30px; --bs-btn-font-size: 10px;">BAIXE
+                            AGORA</button>
                     </div>
                 </div>
             </nav>
@@ -103,11 +105,13 @@
             <!-- fim cta -->
         </section>
     </div>
+
     <div class="secondary-container" id="Sobre">
-        <section class="second-page">
+        <section class="second-page d-flex align-items-center justify-content-center">
+            <!-- card -->
             <ul class="cards-characters">
                 <li>
-                    <div class="card">
+                    <div class="card mx-auto d-block">
                         <img src="./images/IMG GAMES/personagem.png" class="card-img-top w-100" alt="foto personagem">
                         <div class="card-body">
                             <p class="card-text">Geraldo, um fazendeiro que vive tranquilo na sua fazenda.</p>
@@ -115,7 +119,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="card">
+                    <div class="card mx-auto d-block">
                         <img src="./images/IMG GAMES/boi.png" class="card-img-top w-100" alt="foto boi">
                         <div class="card-body">
                             <p class="card-text">Mansinho, boi do Geraldo que em um dia foi picado por uma abelha e
@@ -124,11 +128,17 @@
                     </div>
                 </li>
             </ul>
+            <!-- fim do cards -->
         </section>
     </div>
+    
+
+
     <div class="third-container">
-        <section class="third-page">
-            <div class="caroulsel-grid">
+        <section class="third-page row px-5 d-flex">
+
+            <!-- carousel -->
+            <div class="caroulsel-grid py-4 col-lg-7">
                 <div id="carouselExampleIndicators" class="carousel slide">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -168,7 +178,10 @@
                     </button>
                 </div>
             </div>
-            <div class="cenario-card shadow-green">
+            <!-- fim do carousel -->
+
+            <!-- card text -->
+            <div class="cenario-card shadow-green py-4 col-lg-5">
                 <div class="card" style="width: 50rem; height: 30rem;">
                     <div class="card-body">
                         <div class="card-title-text">
@@ -185,10 +198,15 @@
                     </div>
                 </div>
             </div>
+            <!-- fim card text -->
+
         </section>
     </div>
+
     <div class="fourth-container">
-        <div class="four-page">
+        <div class="four-page px-5 d-flex align-items-center justify-content-center">
+            
+            <!-- caroulsel-2 -->
             <div class="caroulsel-images-game">
                 <div id="carouselExampleCaptions" class="carousel slide">
                     <div class="carousel-indicators">
@@ -270,11 +288,13 @@
                     </button>
                 </div>
             </div>
+            <!-- fim do caroulsel-2 -->
+        
         </div>
     </div>
     <div class="fifth-container" id="Social">
         <div class="five-page">
-            <div class="social">
+            <div class="social px-5 d-flex align-items-center justify-content-center">
                 <ul class="instagram-images shadow-light">
                     <li>
                         <a href="https://www.instagram.com/minzimuz/" target="_blank"><i

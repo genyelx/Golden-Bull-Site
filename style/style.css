@@ -178,6 +178,7 @@ ul {
 
 .second-page {
     min-height: 80vh;
+    width: 100%;
     position: relative;
     top: 0;
     background-color: var(--color-orange-300);
@@ -187,19 +188,18 @@ ul {
     min-height: 79vh;
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 5%;
+    justify-content: center;
 }
 
 .card {
-    width: 60%;
-    height: 100%;
+    width: 80%;
+    height: 90%;
     object-fit: cover;
 }
 
 .card img {
-    width: 720px;
+    width: 480px;
     height: 480px;
     cursor: pointer;
     filter: brightness(0.7);
@@ -216,22 +216,19 @@ ul {
 }
 
 .third-page {
-    min-height: 100vh;
+    min-height: 80vh;
+    width: 100%;
     position: relative;
     top: 0;
-    display: flex;
-    gap: 10px;
     background: var(--gradient-top-2);
 }
 
 .caroulsel-grid {
-    min-height: 95vh;
+    min-height: 75vh;
     width: 50%;
     display: flex;
     align-items: center;
-    align-items: center;
     justify-content: center;
-    margin-left: 1%;
 }
 
 .caroulsel-grid img {
@@ -244,7 +241,6 @@ ul {
     border-radius: 3%;
     border-color: var(--color-green-300);
     border: 5%;
-    margin-right: 1%;
 }
 
 .cenario-card {
@@ -260,7 +256,7 @@ ul {
 }
 
 .card-title-text h1 {
-    font-size: 60px;
+    font-size: 50px;
     text-shadow: 2px 2px var(--color-blue-500);
 }
 
@@ -321,7 +317,7 @@ ul {
     justify-content: center;
     align-items: center;
     color: var(--color-light-900);
-    gap: 30%;
+    gap: 20%;
     margin-top: 5%;
 }
 
@@ -380,7 +376,7 @@ ul {
     }
 
     .card-text {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .caroulsel-grid img {
