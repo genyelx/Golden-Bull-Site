@@ -4,9 +4,8 @@
     --color-light-900: aliceblue;
     --color-green-300: #00bf63;
     --color-blue-200: #3f58cb;
-    --color-blue-500: #5272ffc0;
-    --color-orange-300: #ff914d;
-    --color-brown-100: #845104;
+    --color-blue-500: #133df9c0;
+    --color-orange-300: #ea7227;
     --color-red-100: #d41111;
     --color-black-100: black;
     --color-golden-100: #ffdd5a;
@@ -118,14 +117,14 @@ ul {
 
 .nav-item a {
     font-family: var(--font-title);
-    font-weight: 200;
-    color: aliceblue;
+    font-weight: 400;
+    color: var(--color-light-900);
     font-size: 30px;
 }
 
 .nav-item a:hover,
 .nav-item a:focus {
-    color: var(--color-red-100);
+    color: var(--color-golden-100);
 }
 
 .first-page {
@@ -169,7 +168,7 @@ ul {
 .cta h1 {
     color: var(--color-light-900);
     font-weight: 700;
-    text-shadow: 2px 2px var(--color-blue-500);
+    text-shadow: 4px 4px var(--color-blue-200);
 }
 
 .secondary-container {
@@ -220,7 +219,7 @@ ul {
     width: 100%;
     position: relative;
     top: 0;
-    background: var(--gradient-top-2);
+    background: white;
 }
 
 .caroulsel-grid {
